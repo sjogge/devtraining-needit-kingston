@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_58872_needit.Dog</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Dog</name>
+        <script><![CDATA[var Dog = Class.create();
+Dog.prototype = {
+    initialize: function(name, age) {
+		this.name = name;
+		this.age = age;
+		this.goodBoy = false;
+		gs.addInfoMessage("Dog initialized");
+    },
+	
+	bark: function() {
+		this.color = "Brown";
+		return this.name + " says wooof!";
+	},
+	
+    type: 'Dog'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-31 20:24:57</sys_created_on>
+        <sys_id>f95ff0eb4f521300f0608df07310c77d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Dog</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_f95ff0eb4f521300f0608df07310c77d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-31 20:43:29</sys_updated_on>
+    </sys_script_include>
+</record_update>
